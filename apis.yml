@@ -1,8 +1,27 @@
 aid: ambition
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/ambition.png
 name: Ambition
-description: Ambition is a company surfaced as a portfolio company of 500-global, gv, y-combinator and
-  added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: >-
+  Ambition (theambitionapp.com) is a consumer mobile application that helps teenagers get ready for
+  real life. The app delivers short daily life-skills courses and 30-day simulated virtual internships
+  across careers such as entrepreneurship, sales, game design, nursing, and wealth management, where US
+  middle- and high-school students pick a path, build technical and life skills in about fifteen minutes
+  a day, and can earn gift-card rewards for completing an internship. Ambition ships as native iOS and
+  Android apps ("Ambition - Shape Your Future" / "Learn and Earn"); it is a business-to-consumer product
+  with no public developer API, SDK, or documented integration surface as of this profile. This entry was
+  added to the API Evangelist network as a portfolio-lead stub and enriched with the real, publicly
+  verifiable identity, legal, and domain-security surface of the product.
 url: https://raw.githubusercontent.com/api-evangelist/ambition/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,11 +31,23 @@ x-backed-by:
 - y-combinator
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-disambiguation: >-
+  This profile is theambitionapp.com, a B2C teen life-skills / virtual-internship mobile app. It is NOT
+  ambition.com (the sales performance-management / coaching-and-gamification SaaS platform, which is the
+  Y Combinator company and does publish a Data API). The x-backed-by list was inherited from VC-portfolio
+  stub creation and may reflect that conflation; treat it as unverified for this consumer app.
 specificationVersion: '0.20'
 created: '2026-07-17'
 modified: '2026-07-17'
 tags:
 - Company
+- Education
+- EdTech
+- Career Development
+- Life Skills
+- Mobile App
+- Teens
+- Consumer
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,5 +55,20 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/ambition-domain-security.yml
 - type: Website
   url: https://theambitionapp.com
+- type: PrivacyPolicy
+  url: https://theambitionapp.com/privacy-policy
+- type: TermsOfService
+  url: https://theambitionapp.com/terms
+- type: AppStore
+  url: https://apps.apple.com/us/app/ambition-shape-your-future/id1557562279
+- type: GooglePlay
+  url: https://play.google.com/store/apps/details?id=com.theambitionapp.ambitionappRN
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
