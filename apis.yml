@@ -36,7 +36,7 @@ x-disambiguation: >-
   ambition.com (the sales performance-management / coaching-and-gamification SaaS platform, which is the
   Y Combinator company and does publish a Data API). The x-backed-by list was inherited from VC-portfolio
   stub creation and may reflect that conflation; treat it as unverified for this consumer app.
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-17'
 tags:
